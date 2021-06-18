@@ -43,6 +43,12 @@
        cplex.solve();
        thisOplModel.postProcess();
        
+       writeln();
+       writeln("And now let's change the 50 to 60 coef in the objective");
+       writeln();
+       thisOplModel.getObjective().setCoef(thisOplModel.Chloride,60);
+       cplex.solve();
+       thisOplModel.postProcess();
      }
 
 
@@ -65,6 +71,12 @@
     Gas = 22.5
     Chloride = 27.5
     Objective = 2275
+    
+    And now let's change the 50 to 60 coef in the objective
+
+    Gas = 22.5
+    Chloride = 27.5
+    Objective = 2550
 
 
 */
