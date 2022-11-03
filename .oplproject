@@ -45,6 +45,13 @@
 			</ref>
             		
         </config>
+        		
+        <config default="false" name="changetupleset" category="opl">
+            			
+            <ref name="changetupleset.mod" type="model">
+			</ref>
+            		
+        </config>
         	
     </configs>
     	
